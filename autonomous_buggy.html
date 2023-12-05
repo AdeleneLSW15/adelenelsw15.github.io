@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Adelene Lim</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" id = "specialPage">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<div class="inner">
+
+						<!-- Logo -->
+						
+							<a href="index.html" class="logo">
+								<span class="symbol"><img src="images/icon-code.svg" alt="" /></span><span class="title">Adelene Lim</span>
+							</a>
+
+						<!-- Nav -->
+							<nav>
+								<ul>
+									<li><a href="#menu">Menu</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">My Resume</a></li>
+					<li><a href="generic.html">Tempus etiam</a></li>
+					<li><a href="generic.html">Consequat dolor</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Autonomous White-line Following Buggy</h1>
+							<span class="basic-chip">
+								<span class="chip-text">C++</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">STM32</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">Mbed</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">Project Management</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">BLE Low-energy</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">Control: PID</span>
+							</span>
+
+							<p><br><b>Status: Completed</b> <br> Sep 2021 - May 2022</p>
+							
+									<li class="icon brands fa-github"><a href="https://github.com/AdeleneLSW15/ESP-final-code"> Final Code</a></li>
+									<li class="icon brands fa-github"><a href="https://github.com/AdeleneLSW15/ESP_Technical_Demo"> Debug/Progress Code</a></li>
+									<br>
+									<h3 class="major">Project Details
+										<span class="image left"><img src="images/esp_buggy.JPG" alt="" /></span>
+									</h3>
+									<li> Programming white-line following buggy with control algorithm</li>
+									<li> Adjusting design requirements as we go along</li>
+									<li> Choosing suitable sensors to equip the buggy-sensor test</li>
+									<li> Technical support and delegation of technical tasks</li>
+									
+							
+
+							<p>
+								A modified bang-bang control algorithm was used with fairly precise due to the amount of available sensors and by tuning speed via proportional control algorithm.
+
+							</p>
+							<p>The bang-bang control algorithm with maximum sampling time as well as the 6 sensors provides enough resolution to perform well. We have the added advantage of choosing the right gearbox selection that provides enough torque to go over the slope whilst outputting the best speed.
+							</p>
+							
+							
+							<p>
+								<b>Challenges faced in this project: </b>To decide which control algorithm to proceed as well as coding it into the STM32. A lot of time was spent on debugging the parts of the system. There would also be hardware issues like the STM32 pins not outputting voltage high which was discovered later and mitigated with ‘debugging pins’ code which sets all pins to high, and the user should test using a multimeter voltage test for 5V.
+							</p>
+						
+							<h3>REFLECTIONS</h3>
+							<ul>
+								<li>Could have improved coding collaboration efforts by using version control software like GitHub.</li>
+								<li>Teamwork can be improved by the Agile/kanban board instead of checking progress during regular meetings. </li>
+								<li>More software distribution would be better, allowing teammates to tune for kp, ki, or kd while the programmer resolves bugs. 
+							 </li>
+								<li>Online resources that could estimate kp, ki, and kd would be ideal continuously tuning it on a single buggy is restricting, as multiple people need access to the physical system to do it.
+									<li>Which led me to appreciate the motor control work I have worked on at Intel.</li>	
+								 </li>
+								<li>During one of the technical demonstrations, sometimes the Bluetooth control algorithm doesn’t react to the command instantaneously, thus having some delay. 
+								<ul>
+									<li>To reduce the chances of hitting the wall before it turns, an ultrasonic sensor could be used to detect obstacles and stops.
+										this guarantees no mistakes even if there is a delayed response from the Bluetooth inference.
+										I have implemented obstacle avoidance functionality around the same time frame. View the project here. </li>
+									<li>Another solution is that the sampling time of the sensors and Bluetooth should be separated to ensure no collision - suspected reason</li>
+								</ul> </li>
+							</ul>
+						</div>
+						
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section id = "footer-container">
+						</section>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gloabl_menu.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Adelene Lim</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	</head>
+	<body class="is-preload" id = "specialPage">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+	
+							<!-- Logo -->
+							
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/icon-code.svg" alt="" /></span><span class="title">Adelene Lim</span>
+								</a>
+	
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+	
+						</div>
+					</header>
+	
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="resume.html">My Resume</a></li>
+						<li><a href="generic.html">Tempus etiam</a></li>
+						<li><a href="generic.html">Consequat dolor</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Intel FPGA Work</h1>
+							<p>Duration: <b>Jul 2022 - Aug 2023</b></p>
+							<span class="image main"><img src="images/intel_banner.jpg" alt="" /><center><p>Image from</p></center></span>
+							
+							<span class="basic-chip">
+								<span class="chip-text">C Programming</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">Verilog</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">SystemVerilog</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">MatLab & Simulink</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">TCL Scripting</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">Perforce</span>
+							</span>
+							<span class="basic-chip">
+								<span class="chip-text">Intel Quartus Prime</span>
+							</span>
+							
+									<h2 class="major">Projects Undertaken @ Intel</h2>
+									<ol>
+									<li> <a href = "#HASP">Hardware Acceleration: Transform software speed PI control loop to hardware</a></li>
+									<li><a href="#VSE">Verification: Speed Estimator Test-bench</a></li>
+									<li><a href = "#RHSDoC">Release of High Speed Motor Drive-on-Chip</a></li>
+									<li><a href = "#UFDoC">User-Friendly Motor Drive-on-Chip</a></li>
+									</ol>
+									<h3 class="major" id = "HASP">Hardware Acceleration of Speed PI Control</h3>
+									<ul>
+										<li> <b>Results:</b> Optimized FOC runtime by 25% by implementing hardware acceleration, transforming software speed Proportional Integral (PI) control loop to hardware while only utilising 1% extra logic and 0.04% memory bits in the FPGA device.</li>
+										<ul>
+											<li>Pioneered debug architecture and guided position Position colleague to enable full stack being hardware-accelerated.</li>
+										</ul>
+										<li><b>Challenges:</b> Debugging challenges in the hardware-software interaction layer.</li>
+										<ul>
+											<li><b>Lack of Testbench or Debug Mechanism</b>: The absence of an existing testbench or debug mechanism for the DSP models auto-generated in HDL made it difficult to identify and rectify issues in the implementation.</li>
+											<li><b>Closed-Loop Feedback System Challenges</b>: The control loop in Motor DoC operates as a closed-loop feedback system. Minor scaling faults or misplacement of values led to unpredictable outputs, highlighting the sensitivity of the system.</li>
+										</ul>
+										
+									</ul>
+									
+									<h3 class="major" id = "VSE">Verification: Speed Estimator Testbench</h3>
+									<ul>
+										<li> <b>Results:</b> Fixed over 25 bugs by testbench verification of speed estimator IP.</li>
+										<ul>
+											<li>Initiated to automate testbench via SystemVerilog function, accelerating another development of testbench of speed IP by 70%.</li>
+											<li>Initiated integration testing to the Motor Drive system which uncovered previous engineering work mistakes and resolved over 3 hardware critical issues.</li>
+											<li>My work is used as the foundation to build hardware acceleration of speed calculation IP.</li>
+										</ul>
+										<li><b>Challenges:</b> Integration testing part.</li>
+										<ul>
+											<li> To perform board integration testing of the speed estimator IP, have to integrate the speed estimator IP into the Motor DoC system by learning shell scripting (TCL Scripting). </li>
+											<li>Board integration testing also reveals multiple hardware issues that weren't caught during verification of a single block of the component as there are issues when it interacts with the system.</li>
+										</ul>
+										
+									</ul>
+									<h3 class="major" id = "RHSDoC">Release of <a href="https://www.intel.com/content/www/us/en/design-example/784583/intel-max-10-fpga-drive-on-chip-motor-control-and-power-conversion-tandem-an773.html" >High Speed Motor Drive-on-Chip Design</a></h3>
+									<ul>
+										<li> <b>Results:</b> Released high-speed motor drive control design, collaborating with over 11 Intel colleagues globally.</li>
+										<ul>
+											<li>Guided peers for new code analysis tools and streamlined internal processes thus reducing future release time by 33%.</li>
+											<li>Proposed to consolidate all AN773 Motor Designs into a single-page format on the Design Store to enhance searchability and eliminate confusion arising from multiple duplicates.</li>
+											<li>Corrected minor software issues based on code analysis results, actively engaged in code reviews, and contributed to hardware architecture reviews in adherence to Software Development protocols.</li>
+											
+										</ul>
+										<li><b>Challenges:</b> Facing organizational, and communication challenges in addition to the technical process demonstrates the multi-faced nature of the software release process.										</li>
+										<ul>
+											<li>Learning Curve for New Tools: The introduction of new tools and processes, such as the Coverity Static Analysis toolkit, required additional time for the student to adapt and integrate them into the release procedures.</li>
+											<li>Interdependence of Documentation and Design Store Link:Managing the relationship between the documentation PDF and the Design Store link posed difficulties. The documentation needed to be included in the design uploaded but it requires the design link in the documentation itself.</li>
+											<li>Version Conflict with Design Store Team: The Design Store release team based in Asia lacked the necessary Quartus version for the AN773 design. This caused delays due to version conflicts, requiring effective communication and some off-hours meetings to release the designs on time.</li>
+											
+										</ul>
+										
+									</ul>
+									<h3 class="major" id = "UFDoC">User-Friendly Motor Drive-on-Chip</h3>
+									<ul>
+										<li> <b>Results:</b> Reduced compile time by 39% by refactoring motor drive-on-chip software written in C, using modular software approach. Code
+											imported to <a href="https://www.intel.com/content/www/us/en/design-example/784583/intel-max-10-fpga-drive-on-chip-motor-control-and-power-conversion-tandem-an773.html" >new FPGA Motor DoC design.</a></li>
+										<ul>
+											<li>The User-Friendly software is preferred by Intel Customers compared to the old Motor DoC version.</li>
+										</ul>
+										<li><b>Challenges:</b> Hardware-software interaction layer limitations when performing software optimization.</li>
+										<ul>
+											<li>	The intercoupling nature of the hardware and software layer presented challenges in isolating code for distinct functions, as the code meant to run separately was intertwined at the hardware Register Transfer Level, making the separation process challenging.										imported to <a href="https://www.intel.com/content/www/us/en/design-example/784583/intel-max-10-fpga-drive-on-chip-motor-control-and-power-conversion-tandem-an773.html" >new FPGA Motor DoC design.</a></li>
+										</li>
+											<li>Working with another engineer in the project, the process of removing features and verifying them requires careful synchronization via version control.</li>
+										</ul>
+										
+									</ul>
+								
+						</div>
+						
+						
+					</div>
+					
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section id = "footer-container">
+						</section>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gloabl_menu.js"></script>
+
+	</body>
+</html>
